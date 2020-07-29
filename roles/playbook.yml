@@ -1,0 +1,5 @@
+- name: "main playbook for play1 rolen"
+  become: yes
+  hosts: webservers, dbserver
+  roles:
+    - play1

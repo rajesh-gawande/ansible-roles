@@ -1,0 +1,12 @@
+- name: "copy module"
+  become: yes
+  hosts: all
+  tasks:
+    - name: "first taskss"
+      copy:
+        src: /etc/ansible/hosts
+        dest: /home/ansadmin
+    - name: "second task"
+      copy:
+        src: /etc/ansible/ansible.cfg
+        dest: /home/ansadmin

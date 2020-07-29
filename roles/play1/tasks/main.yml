@@ -1,0 +1,13 @@
+---
+# tasks file for play
+- name: "copy hosts"
+  copy:
+    src: "{{ src_name }}"
+    dest: "{{ dest_name }}"
+
+- name: "copy ansible.cfg"
+  copy:
+    src: "{{ src_name }}"
+    dest: "{{ dest_name }}"
+  notify:
+    - restart nginx

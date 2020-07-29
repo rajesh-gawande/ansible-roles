@@ -1,0 +1,5 @@
+---
+# vars file for play1
+src_name: /etc/ansible/hosts
+dest_name: /home/ansadmin
+

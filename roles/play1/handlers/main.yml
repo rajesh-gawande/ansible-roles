@@ -1,0 +1,4 @@
+---
+# handlers file for play1
+- name: restart nginx
+  service: name=nginx state=restarted
